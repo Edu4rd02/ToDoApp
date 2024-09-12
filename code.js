@@ -14,9 +14,13 @@ function createTask(txt){
     containerTask.innerHTML+=`
         <div class="task" id=task${cont}>
             <p> ${txt} </p>
-            <button onclick=document.getElementById("task${cont}").classList.add("taskComplete")> Complete </button>
+            <button onclick=document.getElementById("task${cont}").classList.add("taskComplete")> 
+                <i class="fa-solid fa-check"></i> Complete
+            </button>
 
-            <button onclick=document.getElementById("task${cont}").remove()> Delete </button>
+            <button onclick=document.getElementById("task${cont}").remove()> 
+                <i class="fa-solid fa-x"></i> Delete 
+            </button>
         </div>
     `
     cont=cont+1;

@@ -8,6 +8,10 @@ body{
     background-color: red;
 }
 
+.inputTask{
+    text-align: center;
+}
+
 .task{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -16,6 +20,14 @@ body{
     margin-left: auto;
     max-width: 90%;
     justify-content: center;
+
+    margin-top: 2rem;
+    padding: 1rem;
+    
+    border: 3px solid;
+    border-color: black;
+    background-color: aliceblue;
+    border-radius: 100px;
 }
 
 .task button{
@@ -27,5 +39,9 @@ body{
 
 .taskComplete p{
     text-decoration: line-through;
-    background-color: green;
+}
+.taskComplete{
+    background-color: rgb(110, 255, 110);
+    margin-top: 2rem;
+    padding: 1rem;
 }
