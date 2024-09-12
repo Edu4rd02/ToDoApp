@@ -20,7 +20,12 @@ body{
 
 .task button{
     border-radius: 20px;
-    max-width: 50%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.taskComplete p{
+    text-decoration: line-through;
+    background-color: green;
 }
