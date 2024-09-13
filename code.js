@@ -1,7 +1,8 @@
-const txtTask = document.getElementById('txtTask');
-const containerTask = document.getElementById('containerTasks');
-let cont = 1
+const txtTask = document.getElementById('txtTask'); //This contain the string from the input task
+const containerTask = document.getElementById('containerTasks'); //This contain the div that will contain all the task 
+let cont = 1 //A counter, this will be use for add a unique ID in all the tasks that we add
 
+//*This function get the Sting for the input task, if the String is not empty, it call the function createTask and remove the text from the input
 function getTask()
 {
     if (txtTask.value.trim()){
@@ -10,6 +11,7 @@ function getTask()
     txtTask.value="";
 }
 
+//*This function create the task, the both buttons include the instructions for mark it complete or remove it
 function createTask(txt){
     containerTask.innerHTML+=`
         <div class="task" id=task${cont}>
@@ -23,5 +25,6 @@ function createTask(txt){
             </button>
         </div>
     `
+    //When we create the new task, the counter increase one for assign it a new unique ID
     cont=cont+1;
 }
