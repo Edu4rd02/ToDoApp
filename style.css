@@ -1,9 +1,12 @@
+/* Globals */
 body,html{
     margin: 0;
     padding: 0;
     background-color: #f1f6ce;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Utilities */
 
 .title{
     background-color: #0d0f36;
@@ -15,6 +18,8 @@ body,html{
     font-weight: 400;
     font-style: normal;
 }
+
+/* input task parts */
 
 .inputTask{
     margin-top: 2rem;
@@ -47,6 +52,8 @@ h2{
     background-color: rgb(110, 255, 110);;
 }
 
+/* Create tasks parts */
+
 .task{
     display: grid;
     grid-template-columns: 6fr 1fr 1fr;
@@ -67,17 +74,15 @@ h2{
     font-size: 22px;
 }
 
-.completebtn{
+.task button{
+    border-radius: 20px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: transparent;
     border: none;
     cursor: pointer; 
 }
-
-.deletebtn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-} 
 
 .completebtn:hover{
     background-color: rgb(46, 176, 46);
@@ -89,13 +94,6 @@ h2{
     background-color: rgb(255, 57, 57);
     color: white;
     cursor: pointer;
-}
-
-.task button{
-    border-radius: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .taskComplete p{
