@@ -1,33 +1,94 @@
-body{
+body,html{
     margin: 0;
     padding: 0;
+    background-color: #f1f6ce;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .title{
-    background-color: red;
+    background-color: #0d0f36;
+    color: white;
+    text-align: center;
+    height: 3rem;
+    margin-top:-1.5rem;
+    font-family: "Ewert", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .inputTask{
+    margin-top: 2rem;
     text-align: center;
+}
+
+h2{
+    font-family: "Graduate", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline;
+    width: 50%;
+    vertical-align: middle;
+}
+
+#txtTask{
+    width: 40%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.btnTask{
+    border-radius: 30px;
+    cursor: pointer;
+    height: 2.3rem;
+    width: 10%;
+}
+.btnTask:hover{
+    background-color: rgb(110, 255, 110);;
 }
 
 .task{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 6fr 1fr 1fr;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    max-width: 90%;
+    max-width: 65%;
     justify-content: center;
 
     margin-top: 2rem;
     padding: 1rem;
-    
-    border: 3px solid;
-    border-color: black;
-    background-color: aliceblue;
+
+    background-color: #fcd036;
     border-radius: 100px;
+}
+
+.task p{
+    font-size: 22px;
+}
+
+.completebtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+}
+
+.deletebtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+} 
+
+.completebtn:hover{
+    background-color: rgb(46, 176, 46);
+    color: white;
+    cursor: pointer;
+}
+
+.deletebtn:hover{
+    background-color: rgb(255, 57, 57);
+    color: white;
+    cursor: pointer;
 }
 
 .task button{

@@ -4,7 +4,7 @@ let cont = 1
 
 function getTask()
 {
-    if (txtTask.value){
+    if (txtTask.value.trim()){
         createTask(txtTask.value)
     }
     txtTask.value="";
@@ -14,11 +14,11 @@ function createTask(txt){
     containerTask.innerHTML+=`
         <div class="task" id=task${cont}>
             <p> ${txt} </p>
-            <button onclick=document.getElementById("task${cont}").classList.add("taskComplete")> 
+            <button class="completebtn" onclick=document.getElementById("task${cont}").classList.add("taskComplete")> 
                 <i class="fa-solid fa-check"></i> Complete
             </button>
 
-            <button onclick=document.getElementById("task${cont}").remove()> 
+            <button class="deletebtn" onclick=document.getElementById("task${cont}").remove()> 
                 <i class="fa-solid fa-x"></i> Delete 
             </button>
         </div>
